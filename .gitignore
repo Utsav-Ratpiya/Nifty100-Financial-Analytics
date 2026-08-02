@@ -34,7 +34,7 @@ Thumbs.db
 htmlcov/
 
 # Logs
-*.log
+#*.log
 
 # Build
 build/

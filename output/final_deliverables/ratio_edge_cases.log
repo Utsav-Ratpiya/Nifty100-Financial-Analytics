@@ -1,0 +1,66 @@
+# ratio_edge_cases.log — generated 2026-07-22T11:59:07.507119+00:00
+# Cross-check: computed ROCE/ROE vs companies.xlsx pre-computed roce_percentage/roe_percentage
+# Category legend: data source issue | version difference | formula discrepancy
+
+ROCE anomaly | AMBUJACEM | computed=18.51% source=12.80% diff=5.71pp | category=formula discrepancy
+ROCE anomaly | TORNTPHARM | computed=32.30% source=23.20% diff=9.10pp | category=formula discrepancy
+ROCE anomaly | BHARTIARTL | computed=25.10% source=13.10% diff=12.00pp | category=version difference
+ROE anomaly    | ADANIPOWER | computed=48.28% source=57.10% diff=8.82pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROE anomaly    | ADANIENT | computed=8.53% source=13.64% diff=5.11pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | BAJAJFINSV | computed=11.71% source=21.14% diff=9.43pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROE anomaly    | BAJAJFINSV | computed=25.85% source=11.72% diff=14.13pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | TRENT | computed=50.85% source=23.80% diff=27.05pp | category=data source issue
+ROE anomaly    | TRENT | computed=36.31% source=27.20% diff=9.11pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | TECHM | computed=18.60% source=11.90% diff=6.70pp | category=formula discrepancy
+ROCE anomaly | BAJFINANCE | computed=4.36% source=11.90% diff=7.54pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROCE anomaly | ADANIGREEN | computed=11.49% source=96.50% diff=85.01pp | category=data source issue
+ROCE anomaly | BEL | computed=4504.72% source=34.60% diff=4470.12pp | category=data source issue
+ROE anomaly    | BEL | computed=4744.05% source=26.30% diff=4717.75pp | category=data source issue [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROE anomaly    | TCS | computed=50.94% source=0.52% diff=50.42pp | category=data source issue [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | PFC | computed=3.49% source=9.96% diff=6.47pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROE anomaly    | PFC | computed=26.16% source=19.49% diff=6.67pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROE anomaly    | TATASTEEL | computed=-5.33% source=6.55% diff=11.88pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | INDIGO | computed=5643.45% source=24.50% diff=5618.95pp | category=data source issue
+ROCE anomaly | IRCTC | computed=47.78% source=53.80% diff=6.02pp | category=formula discrepancy
+ROE anomaly    | IRCTC | computed=34.40% source=40.40% diff=6.00pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | POWERGRID | computed=19.17% source=13.20% diff=5.97pp | category=formula discrepancy
+ROCE anomaly | LT | computed=152.62% source=17.18% diff=135.44pp | category=data source issue
+ROE anomaly    | LT | computed=77.67% source=10.49% diff=67.18pp | category=data source issue [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | M&M | computed=16.12% source=26.98% diff=10.86pp | category=version difference
+ROE anomaly    | PNB | computed=61.32% source=8.70% diff=52.62pp | category=data source issue [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | MOTHERSON | computed=20.54% source=13.70% diff=6.84pp | category=formula discrepancy
+ROCE anomaly | NESTLEIND | computed=162.06% source=185.43% diff=23.37pp | category=data source issue
+ROE anomaly    | NESTLEIND | computed=117.75% source=135.61% diff=17.86pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | LICI | computed=57.53% source=63.79% diff=6.26pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROE anomaly    | LICI | computed=49.45% source=63.61% diff=14.16pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | BOSCHLTD | computed=30.25% source=20.60% diff=9.65pp | category=formula discrepancy
+ROCE anomaly | ICICIPRULI | computed=754.89% source=8.75% diff=746.14pp | category=data source issue [Financials sector — D/E high-leverage flag suppressed structurally]
+ROE anomaly    | BPCL | computed=35.51% source=41.90% diff=6.39pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | BRITANNIA | computed=56.24% source=48.90% diff=7.34pp | category=formula discrepancy
+ROCE anomaly | TATAPOWER | computed=16.45% source=11.10% diff=5.35pp | category=formula discrepancy
+ROCE anomaly | CHOLAFIN | computed=3.51% source=10.40% diff=6.89pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROCE anomaly | CIPLA | computed=71.55% source=22.80% diff=48.75pp | category=data source issue
+ROCE anomaly | COALINDIA | computed=105.75% source=63.60% diff=42.15pp | category=data source issue
+ROE anomaly    | COALINDIA | computed=45.17% source=52.00% diff=6.83pp | category=formula discrepancy [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | TATAMOTORS | computed=33.93% source=20.10% diff=13.83pp | category=version difference
+ROE anomaly    | TATAMOTORS | computed=37.46% source=49.40% diff=11.94pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | ICICIGI | computed=146.43% source=22.50% diff=123.93pp | category=data source issue [Financials sector — D/E high-leverage flag suppressed structurally]
+ROCE anomaly | GODREJCP | computed=4.73% source=26.49% diff=21.76pp | category=data source issue
+ROE anomaly    | GODREJCP | computed=-4.45% source=6.77% diff=11.22pp | category=version difference [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | HAL | computed=3617.39% source=38.90% diff=3578.49pp | category=data source issue
+ROE anomaly    | HAL | computed=3816.58% source=28.90% diff=3787.68pp | category=data source issue [note: source roe_percentage can itself be stale/anomalous vs the engine — engine value used for analytics, source value for display only]
+ROCE anomaly | HCLTECH | computed=34.71% source=29.60% diff=5.11pp | category=formula discrepancy
+ROCE anomaly | HDFCLIFE | computed=646.47% source=6.61% diff=639.86pp | category=data source issue [Financials sector — D/E high-leverage flag suppressed structurally]
+ROCE anomaly | SHRIRAMFIN | computed=4.32% source=11.30% diff=6.98pp | category=formula discrepancy [Financials sector — D/E high-leverage flag suppressed structurally]
+ROCE anomaly | HEROMOTOCO | computed=177.92% source=29.10% diff=148.82pp | category=data source issue
+ROCE anomaly | HINDALCO | computed=118.21% source=11.30% diff=106.91pp | category=data source issue
+ROCE anomaly | HINDUNILVR | computed=89.68% source=27.20% diff=62.48pp | category=data source issue
+ROCE anomaly | SHREECEM | computed=22.88% source=14.80% diff=8.08pp | category=formula discrepancy
+
+# OPM cross-check: 234 company-year rows differ from source opm_percentage by > 1pp | category=version difference
+
+# Cross-check vs data/financial_ratios.xlsx (Sprint 2 reference file, 1184 rows):
+#   NPM/ROE/D-E/ICR/Asset-Turnover matched the engine within rounding tolerance across 1041 matched company-year rows (mean abs diff < 0.01) | category=formula discrepancy (none found — confirms formulas)
+DATA QUALITY FINDING | data/financial_ratios.xlsx contains 202 duplicate (company_id, year) rows where FCF-related fields diverge between the two copies while NPM/ROE/D-E match exactly (e.g. ABB Mar-2014..Mar-2024) | category=data source issue — reference file appears to carry two vintages of CFI-derived figures per row. Not used for loading (engine computes FCF directly from cashflow.xlsx); flagged for analyst awareness only.
+
+# Summary: 36 ROCE anomalies, 18 ROE anomalies (latest-year cross-check, 92 companies checked)
