@@ -1,9 +1,158 @@
-# Nifty 100 Analytics — Bluestock Fintech Capstone
 
-Multi-sprint mutual fund / equity analytics project: ETL pipeline, financial
-ratio engine, screener, peer comparison, Streamlit dashboard, NLP pros/cons
-generator, clustering, and a FastAPI service — built on 92 Nifty 100
-companies' financial data.
+# 📊 Nifty 100 Financial Analytics Platform
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**AI-Powered Financial Analytics Platform for Nifty 100 Companies**
+
+Built as an AI & Data Analytics Capstone Project during the Bluestock Fintech Internship.
+
+</div>
+
+---
+
+# 🚀 Project Overview
+
+The **Nifty 100 Financial Analytics Platform** is an end-to-end financial analytics application designed to analyze companies in the Nifty 100 index.
+
+The project automates the complete pipeline from raw financial statement ingestion to interactive dashboards, valuation analytics, investment screeners, peer comparison, NLP-generated insights, clustering, PDF report generation, and REST APIs.
+
+The platform processes financial data for **92 Nifty 100 companies** and provides professional-grade analytics useful for investors, analysts, and students.
+
+
+---
+
+# 📸 Dashboard Preview
+
+## Home Dashboard
+
+![Home](screenshots/home.png)
+
+---
+
+## Company Profile
+
+![Profile](screenshots/profile.png)
+
+---
+
+## Stock Screener
+
+![Screener](screenshots/screener.png)
+
+---
+
+## Peer Comparison
+
+![Peers](screenshots/peers.png)
+
+---
+
+## Trend Analysis
+
+![Trend](screenshots/trends.png)
+
+---
+
+## Sector Analysis
+
+![Sector](screenshots/sector1.png)
+
+![Sector](screenshots/sector2.png)
+
+---
+
+## Capital Allocation
+
+![Capital](screenshots/capital.png)
+
+---
+
+## Annual Reports
+
+![Reports](screenshots/reports.png)
+
+---
+
+# 📂 Project Structure
+
+```text
+Nifty100-Financial-Analytics
+│
+├── config/
+├── data/
+├── db/
+├── docs/
+├── notebooks/
+├── output/
+├── reports/
+├── screenshots/
+├── scripts/
+├── src/
+│   ├── analytics/
+│   ├── api/
+│   ├── dashboard/
+│   ├── etl/
+│   ├── nlp/
+│   ├── reports/
+│   └── screener/
+│
+├── tests/
+│
+├── nifty100.db
+├── requirements.txt
+├── Makefile
+└── README.md
+```
+
+---
+
+# 🛠 Tech Stack
+
+### Programming
+
+- Python
+
+### Data Engineering
+
+- Pandas
+- NumPy
+- SQLite
+- SQLAlchemy
+
+### Visualization
+
+- Plotly
+- Matplotlib
+- Streamlit
+
+### Machine Learning
+
+- Scikit-Learn
+
+### Backend
+
+- FastAPI
+- Uvicorn
+
+### Reports
+
+- ReportLab
+- OpenPyXL
+
+### Testing
+
+- PyTest
+
+---
+
 
 ## Quick Start — full pipeline, Sprint 1 → 6, from scratch
 
@@ -230,3 +379,52 @@ make dashboard   # streamlit run src/dashboard/app.py -> http://localhost:8501
 | 6 | KMeans clustering + FastAPI (16 endpoints) + full test suite + sign-off |
 
 See `Makefile` for the command that will exist for each stage.
+
+---
+
+# 📊 Generated Outputs
+
+The project automatically generates
+
+- SQLite Database
+- Financial Ratio Table
+- Screener Reports
+- Peer Comparison Reports
+- Radar Charts
+- PDF Tear Sheets
+- Sector Reports
+- Portfolio Summary
+- Cluster Labels
+- Correlation Heatmap
+- Analyst Guide
+- OpenAPI Documentation
+
+---
+
+# 👨‍💻 Author
+
+**Utsav Ratapiya**
+
+B.Tech Computer Science (AI & ML)
+
+Adani University
+
+GitHub
+
+https://github.com/Utsav-Ratpiya
+
+LinkedIn
+
+https://www.linkedin.com/in/utsav-ratapiya-2b9470284/
+
+---
+
+# ⭐ If you found this project useful
+
+Please consider giving this repository a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is developed for educational and internship purposes.
