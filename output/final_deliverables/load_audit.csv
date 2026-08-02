@@ -1,0 +1,11 @@
+table,source_file,rows_read,rows_loaded,rows_rejected,notes,loaded_at
+companies,companies.xlsx,92,92,0,,2026-07-22T11:03:51.485480+00:00
+profitandloss,profitandloss.xlsx,1276,1164,112,,2026-07-22T11:03:51.746644+00:00
+balancesheet,balancesheet.xlsx,1312,1140,172,,2026-07-22T11:03:52.001544+00:00
+cashflow,cashflow.xlsx,1187,1056,131,,2026-07-22T11:03:52.238350+00:00
+analysis,analysis.xlsx,20,16,4,,2026-07-22T11:03:52.256826+00:00
+documents,documents.xlsx,1585,1457,128,,2026-07-22T11:03:52.361240+00:00
+prosandcons,prosandcons.xlsx,16,14,2,,2026-07-22T11:03:52.377014+00:00
+sectors,sectors.xlsx,92,92,0,,2026-07-22T11:03:52.419912+00:00
+stock_prices,stock_prices.xlsx,5520,5520,0,SIMULATED dataset per project rules,2026-07-22T11:03:52.922887+00:00
+peer_groups,peer_groups.xlsx,56,56,0,,2026-07-22T11:03:52.963003+00:00

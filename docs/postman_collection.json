@@ -1,0 +1,429 @@
+{
+  "info": {
+    "name": "Nifty 100 Analytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/health",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "health"
+          ],
+          "query": []
+        },
+        "description": "status, per-table row counts, uptime, version"
+      }
+    },
+    {
+      "name": "List companies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies"
+          ],
+          "query": [
+            {
+              "key": "sector",
+              "value": ""
+            },
+            {
+              "key": "market_cap_category",
+              "value": ""
+            },
+            {
+              "key": "search",
+              "value": ""
+            }
+          ]
+        },
+        "description": "All 92 companies (id, name, sector, ROE, ROCE), optionally filtered"
+      }
+    },
+    {
+      "name": "Get company profile",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker"
+          ],
+          "query": []
+        },
+        "description": "Full company profile + latest-year KPIs. 404 if unknown."
+      }
+    },
+    {
+      "name": "Get P&L history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/pl",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "pl"
+          ],
+          "query": [
+            {
+              "key": "from_year",
+              "value": ""
+            },
+            {
+              "key": "to_year",
+              "value": ""
+            }
+          ]
+        },
+        "description": "P&L history, optional YYYY-MM year range filter"
+      }
+    },
+    {
+      "name": "Get balance sheet history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/bs",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "bs"
+          ],
+          "query": [
+            {
+              "key": "from_year",
+              "value": ""
+            },
+            {
+              "key": "to_year",
+              "value": ""
+            }
+          ]
+        },
+        "description": "Balance sheet history, optional year range filter"
+      }
+    },
+    {
+      "name": "Get cash flow history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/cashflow",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "cashflow"
+          ],
+          "query": [
+            {
+              "key": "from_year",
+              "value": ""
+            },
+            {
+              "key": "to_year",
+              "value": ""
+            }
+          ]
+        },
+        "description": "Cash flow history, optional year range filter"
+      }
+    },
+    {
+      "name": "Get computed KPIs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/ratios",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "ratios"
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": ""
+            }
+          ]
+        },
+        "description": "All computed KPIs per year, or a single year if `year` is passed"
+      }
+    },
+    {
+      "name": "Download tearsheet PDF",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/tearsheet",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "tearsheet"
+          ],
+          "query": []
+        },
+        "description": "The pre-generated 2-page tearsheet PDF (application/pdf)"
+      }
+    },
+    {
+      "name": "Get radar comparison data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/peers/compare",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "peers",
+            "compare"
+          ],
+          "query": []
+        },
+        "description": "8-axis metric values vs peer group average + benchmark company"
+      }
+    },
+    {
+      "name": "Get annual report links",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/companies/:ticker/documents",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "companies",
+            ":ticker",
+            "documents"
+          ],
+          "query": []
+        },
+        "description": "Annual report links with is_url_valid (format check) flag"
+      }
+    },
+    {
+      "name": "Run the screener",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/screener",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "screener"
+          ],
+          "query": [
+            {
+              "key": "min_roe",
+              "value": ""
+            },
+            {
+              "key": "max_de",
+              "value": ""
+            },
+            {
+              "key": "min_fcf",
+              "value": ""
+            },
+            {
+              "key": "sector",
+              "value": ""
+            },
+            {
+              "key": "min_rev_cagr_5yr",
+              "value": ""
+            },
+            {
+              "key": "min_pat_cagr_5yr",
+              "value": ""
+            },
+            {
+              "key": "max_pe",
+              "value": ""
+            }
+          ]
+        },
+        "description": "Ranked company list filtered by any combination of thresholds. 400 for invalid params."
+      }
+    },
+    {
+      "name": "List sectors",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/sectors",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "sectors"
+          ],
+          "query": []
+        },
+        "description": "All broad sectors with company_count, median_roe, median_pe, median_de"
+      }
+    },
+    {
+      "name": "Get companies in a sector",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/sectors/:sector/companies",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "sectors",
+            ":sector",
+            "companies"
+          ],
+          "query": []
+        },
+        "description": "All companies in a broad_sector with latest-year KPIs. 404 if unknown."
+      }
+    },
+    {
+      "name": "Get a peer group",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/peers/:group_name",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "peers",
+            ":group_name"
+          ],
+          "query": []
+        },
+        "description": "All companies in a peer group with percentile ranks. 404 if unknown."
+      }
+    },
+    {
+      "name": "Get valuation multiples history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/market-cap/:ticker",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "market-cap",
+            ":ticker"
+          ],
+          "query": []
+        },
+        "description": "Historical P/E, P/B, EV/EBITDA, dividend yield, 2019-2024 (SIMULATED data)"
+      }
+    },
+    {
+      "name": "Get portfolio percentile stats",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/portfolio/stats",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "portfolio",
+            "stats"
+          ],
+          "query": []
+        },
+        "description": "P10-P90 percentile table for 10 core KPIs across all 92 companies"
+      }
+    }
+  ]
+}

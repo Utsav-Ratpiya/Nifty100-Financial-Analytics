@@ -1,0 +1,50 @@
+company_id,from_pattern,to_pattern,year
+ABB,Reinvestor,Shareholder Returns,Mar-2024
+ADANIENSOL,Mixed,Shareholder Returns,Mar-2024
+ADANIENT,Shareholder Returns,Mixed,Mar-2024
+ADANIGREEN,Shareholder Returns,Mixed,Mar-2024
+ASIANPAINT,Reinvestor,Shareholder Returns,Mar-2024
+AXISBANK,Mixed,Growth Funded by Debt,Mar-2024
+BAJAJ-AUTO,Liquidating Assets,Reinvestor,Mar-2024
+BANKBARODA,Pre-Revenue,Growth Funded by Debt,Mar-2024
+BEL,Liquidating Assets,Shareholder Returns,Mar-2024
+BRITANNIA,Shareholder Returns,Liquidating Assets,Mar-2024
+CANBK,Growth Funded by Debt,Reinvestor,Mar-2024
+CIPLA,Shareholder Returns,Reinvestor,Mar-2024
+COALINDIA,Shareholder Returns,Reinvestor,Mar-2024
+DABUR,Reinvestor,Shareholder Returns,Mar-2024
+DIVISLAB,Shareholder Returns,Reinvestor,Mar-2024
+DLF,Shareholder Returns,Mixed,Mar-2024
+DRREDDY,Shareholder Returns,Reinvestor,Mar-2024
+GAIL,Mixed,Shareholder Returns,Mar-2024
+GODREJCP,Shareholder Returns,Mixed,Mar-2024
+HAVELLS,Liquidating Assets,Shareholder Returns,Mar-2024
+HDFCBANK,Mixed,Liquidating Assets,Mar-2024
+HDFCLIFE,Mixed,Shareholder Returns,Mar-2024
+HEROMOTOCO,Reinvestor,Shareholder Returns,Mar-2024
+HINDUNILVR,Reinvestor,Shareholder Returns,Mar-2024
+ICICIBANK,Growth Funded by Debt,Mixed,Mar-2024
+ICICIPRULI,Reinvestor,Mixed,Mar-2024
+INDIGO,Reinvestor,Shareholder Returns,Mar-2024
+INDUSINDBK,Growth Funded by Debt,Pre-Revenue,Mar-2024
+IRFC,Distress Signal,Shareholder Returns,Mar-2024
+ITC,Reinvestor,Liquidating Assets,Mar-2024
+JINDALSTEL,Shareholder Returns,Mixed,Mar-2024
+JIOFIN,Shareholder Returns,Mixed,Mar-2024
+KOTAKBANK,Growth Funded by Debt,Mixed,Mar-2024
+LICI,Shareholder Returns,Reinvestor,Mar-2024
+LODHA,Liquidating Assets,Mixed,Mar-2024
+LT,Shareholder Returns,Liquidating Assets,Mar-2024
+LTIM,Reinvestor,Shareholder Returns,Mar-2024
+MOTHERSON,Shareholder Returns,Mixed,Mar-2024
+PNB,Mixed,Growth Funded by Debt,Mar-2024
+RELIANCE,Mixed,Shareholder Returns,Mar-2024
+SBIN,Growth Funded by Debt,Reinvestor,Mar-2024
+SHRIRAMFIN,Distress Signal,Growth Funded by Debt,Mar-2024
+SUNPHARMA,Mixed,Shareholder Returns,Mar-2024
+TATACONSUM,Shareholder Returns,Mixed,Mar-2024
+TATAPOWER,Mixed,Shareholder Returns,Mar-2024
+TATASTEEL,Shareholder Returns,Reinvestor,Mar-2024
+TITAN,Mixed,Reinvestor,Mar-2024
+TORNTPHARM,Mixed,Shareholder Returns,Mar-2024
+TRENT,Shareholder Returns,Reinvestor,Mar-2024

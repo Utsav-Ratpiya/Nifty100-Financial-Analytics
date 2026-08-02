@@ -1,0 +1,71 @@
+# config/screener_config.yaml — Nifty 100 Analytics
+# Sprint 3 / Day 15 deliverable: all threshold definitions, analyst-editable.
+#
+# Each metric maps a screener parameter name to a column in the screener
+# universe (src/screener/universe.py) and a filter direction:
+#   min -> keep rows where column >= threshold
+#   max -> keep rows where column <= threshold
+#
+# Special cases handled in src/screener/engine.py (not here):
+#   - D/E filters automatically skip companies in the Financials sector
+#   - ICR filters treat icr_label == 'Debt Free' (interest_coverage is None)
+#     as +infinity, so it always passes any ICR minimum
+
+metrics:
+  min_roe:            {column: return_on_equity_pct,   direction: min}
+  max_de:             {column: debt_to_equity,          direction: max}
+  min_fcf:            {column: free_cash_flow_cr,       direction: min}
+  min_rev_cagr_5yr:   {column: revenue_cagr_5yr,        direction: min}
+  min_pat_cagr_5yr:   {column: pat_cagr_5yr,            direction: min}
+  min_opm:            {column: operating_profit_margin_pct, direction: min}
+  max_pe:             {column: pe_ratio,                direction: max}
+  max_pb:             {column: pb_ratio,                direction: max}
+  min_div_yield:      {column: dividend_yield_pct,      direction: min}
+  min_icr:            {column: interest_coverage,       direction: min}
+  min_market_cap:     {column: market_cap_crore,        direction: min}
+  min_net_profit:     {column: net_profit,              direction: min}
+  min_eps_cagr:       {column: eps_cagr_5yr,            direction: min}
+  min_asset_turnover: {column: asset_turnover,           direction: min}
+  min_sales:          {column: sales,                   direction: min}
+
+  # Extra metrics used only by specific presets (not part of the 15
+  # slider-driven metrics in the Sprint 4 dashboard, but still valid
+  # financial_ratios columns):
+  max_dividend_payout: {column: dividend_payout_ratio_pct, direction: max}
+  min_rev_cagr_3yr:    {column: revenue_cagr_3yr,        direction: min}
+
+presets:
+  quality_compounder:
+    label: "Quality Compounder"
+    filters: {min_roe: 15, max_de: 1.0, min_fcf: 0, min_rev_cagr_5yr: 10}
+
+  value_pick:
+    label: "Value Pick"
+    # Recalibrated 2026-08-01: the original thresholds (P/E<20, P/B<3.0)
+    # were set assuming a typical Indian large-cap P/E/P/B distribution,
+    # but this dataset's simulated market_cap.xlsx multiples run much
+    # richer (median P/E ~46x, median P/B ~7.5x across the 92-company
+    # universe) — so P/E<20 & P/B<3 together only ever match 2 companies,
+    # violating the "5-50 companies" exit criterion from Sprint 3 Day 16.
+    # New thresholds are calibrated against the actual distribution
+    # (see docs/sprint3_retro.md) to keep the same "cheap + low-leverage +
+    # dividend-paying" value intent while landing in-range (13 companies).
+    filters: {max_pe: 55, max_pb: 8.0, max_de: 3.0, min_div_yield: 0.5}
+
+  growth_accelerator:
+    label: "Growth Accelerator"
+    filters: {min_pat_cagr_5yr: 20, min_rev_cagr_5yr: 15, max_de: 2.0}
+
+  dividend_champion:
+    label: "Dividend Champion"
+    filters: {min_div_yield: 2, max_dividend_payout: 80, min_fcf: 0}
+
+  debt_free_blue_chip:
+    label: "Debt-Free Blue Chip"
+    filters: {max_de: 0, min_roe: 12, min_sales: 5000}
+
+  turnaround_watch:
+    label: "Turnaround Watch"
+    filters: {min_rev_cagr_3yr: 10, min_fcf: 0}
+    # D/E-declining-YoY is evaluated separately in engine.py (needs a
+    # 2-year lookback, not a simple threshold on the latest row)

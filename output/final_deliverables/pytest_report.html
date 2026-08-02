@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Nifty 100 Analytics — Test Report</title>
+<style>
+body { font-family: -apple-system, Arial, sans-serif; margin: 2em; color: #222; }
+h1 { color: #0B1F3A; }
+table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: #D9DEE5; }
+.summary { background: #F2F3F5; padding: 1em; border-radius: 6px; }
+</style></head><body>
+<h1>Nifty 100 Analytics — Test Report</h1>
+<p>Generated 2026-07-24T03:44:29.815101 by a lightweight in-sandbox
+test harness (pytest itself is not installed in this build environment / no
+network access to install it). This substitutes for <code>pytest --html</code>
+here; running <code>make test</code> in an environment with
+<code>requirements.txt</code> installed will produce the authoritative
+pytest-html report, and will additionally pick up the 2
+file(s) below that need packages not present in this sandbox.</p>
+<div class="summary">
+<b>Total:</b> 149 &nbsp; <b style="color:#1E7A34">Passed:</b> 149 &nbsp;
+<b style="color:#B3261E">Failed:</b> 0
+</div>
+<h3>Files skipped (missing dependency in this sandbox — run locally with full requirements.txt installed)</h3><ul><li>tests/api/test_endpoints.py: No module named &#x27;fastapi&#x27;</li><li>tests/etl/test_loader.py: No module named &#x27;pytest&#x27;</li></ul>
+<table>
+<tr><th>File</th><th>Test</th><th>Status</th><th>Details</th></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_deleveraging_false_when_debt_rising</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_deleveraging_false_with_one_year</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_deleveraging_true</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_distress_false_when_cff_negative</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_distress_false_when_cfo_positive</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cashflow_intelligence.py</td><td>test_detect_distress_true</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cluster_profiling.py</td><td>test_build_portfolio_stats_has_all_percentiles</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cluster_profiling.py</td><td>test_detect_outliers_flags_extreme_value</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_cluster_profiling.py</td><td>test_detect_outliers_skips_small_sectors</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_clustering.py</td><td>test_impute_by_sector_median_fills_missing</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_clustering.py</td><td>test_name_clusters_assigns_five_distinct_names</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_clustering.py</td><td>test_winsorize_clips_extreme_values</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_boundary_at_0_7x_is_fair_not_discount</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_boundary_at_1_5x_is_fair_not_caution</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_caution_when_pe_high_vs_sector</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_discount_when_pe_low_vs_sector</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_fair_within_band</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_not_rated_when_pe_missing</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_not_rated_when_sector_median_missing</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_classify_not_rated_when_sector_median_zero</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_fcf_yield_negative_fcf_allowed</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_fcf_yield_none_when_inputs_missing</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_fcf_yield_none_when_market_cap_zero</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/analytics/test_valuation.py</td><td>test_fcf_yield_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_documents_known_ticker</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_documents_unknown_ticker_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_pl_returns_rows_for_known_ticker</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_pl_unknown_ticker_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_pl_year_range_filter</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_profile_known_ticker</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_profile_unknown_ticker_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_company_ratios_single_year</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_market_cap_history_known_ticker</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_peer_compare_no_peer_group_message</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_peer_group_known_group</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_peer_group_unknown_group_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_portfolio_stats_returns_ten_kpis</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_sector_companies_known_sector</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_sector_companies_unknown_sector_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_tearsheet_path_known_ticker_exists</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_get_tearsheet_path_unknown_ticker_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_health_returns_ok_and_all_ten_tables</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_list_companies_returns_92</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_list_companies_search_filter</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_list_sectors_returns_ten</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_screener_invalid_numeric_raises_valueerror</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/api/test_services.py</td><td>test_screener_min_roe_filters_correctly</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq01_pk_uniqueness</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq02_composite_key_uniqueness</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq03_fk_integrity</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq04_bs_balance</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq05_opm_crosscheck</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq06_positive_sales</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq07_net_cash_consistency</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq08_tax_rate_sanity</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq09_dividend_payout_cap</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq10_url_validity</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq11_eps_sign_consistency</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq12_bs_components</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq13_year_coverage</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq14_stock_price_positivity</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq15_sector_completeness</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/dq/test_rules.py</td><td>test_dq16_peer_benchmark_uniqueness</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_already_clean</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_both_side_space</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_empty_string</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_idempotent</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_internal_double_space</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_leading_space</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_lowercase</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_mixed_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_nan_string</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_none_input</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_numeric_like</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_trailing_space</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_whitespace_only</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_with_ampersand</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_ticker_with_hyphen</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_all_months_mapped</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_bare_4digit</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_bare_4digit_int_input</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_case_insensitive_month</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_empty_string</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_mon_dash_2digit</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_mon_dash_2digit_dec</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_mon_yyyy_basic</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_mon_yyyy_mar</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_month_no_space</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_nan_string</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_none_input</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_out_of_range</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_simple_wrapper_failure</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_simple_wrapper_success</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_trailing_junk_digits</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_trailing_junk_months_tag</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_ttm</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_ttm_lowercase</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_unparseable_garbage</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/etl/test_normalise.py</td><td>test_year_whitespace_only</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_both_negative</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_decline_to_loss_positive_to_negative</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_insufficient_data_none_start</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_insufficient_data_zero_window</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_normal_positive_to_positive</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_raw_formula</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_turnaround_negative_to_positive</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_cagr_zero_base</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_trailing_cagr_series_insufficient_for_early_positions</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cagr.py</td><td>test_trailing_cagr_series_turnaround_flag_propagates</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_capex_intensity_asset_light_label</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_capex_intensity_capital_intensive_label</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_capital_allocation_distress_signal_pattern</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_capital_allocation_reinvestor_pattern</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_capital_allocation_shareholder_returns_pattern</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_cfo_quality_accrual_risk_label</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_cfo_quality_handles_zero_pat</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_cfo_quality_high_quality_label</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_fcf_allows_negative_value</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_fcf_conversion_zero_operating_profit_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_cashflow_kpis.py</td><td>test_fcf_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_asset_turnover_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_asset_turnover_zero_assets_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_de_debt_free_returns_zero_not_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_de_negative_net_worth_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_de_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_high_leverage_flag_suppressed_for_financials_sector</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_high_leverage_flag_triggers_for_non_financials</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_icr_interest_zero_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_icr_label_debt_free</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_icr_warning_flag_below_threshold</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_net_debt_handles_none_investments</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_net_debt_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_npm_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_npm_zero_sales_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_opm_crosscheck_mismatch_flagged</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_opm_crosscheck_within_tolerance_not_flagged</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_roa_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_roa_zero_assets_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_roce_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_roe_negative_equity_returns_none</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/kpi/test_ratios.py</td><td>test_roe_normal_case</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_basic_years</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_decimal_value</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_extra_whitespace</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_last_year_does_not_match</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_none_input</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_one_year_singular_negative_value_does_not_match</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_positive_one_year</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+<tr><td>tests/nlp/test_parser.py</td><td>test_parse_ttm_does_not_match</td><td style="color:#1E7A34;font-weight:bold">PASS</td><td><pre style="white-space:pre-wrap;font-size:11px"></pre></td></tr>
+
+</table>
+</body></html>

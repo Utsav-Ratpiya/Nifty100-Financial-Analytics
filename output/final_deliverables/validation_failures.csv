@@ -1,0 +1,785 @@
+rule_id,company_id,field,issue,severity
+DQ-02,AMBUJACEM,year,profitandloss: trailing_junk_stripped:'15' (raw='Mar 2023 15'),WARNING
+DQ-02,HCLTECH,year,profitandloss: trailing_junk_stripped:'9m' (raw='Mar 2016 9m'),WARNING
+DQ-02,SHREECEM,year,profitandloss: trailing_junk_stripped:'9m' (raw='Mar 2016 9m'),WARNING
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2013) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2014) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2015) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2016) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2017) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2018) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2019) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2020) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2021) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2022) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2023) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, Mar-2024) in profitandloss (2 rows)",CRITICAL
+DQ-02,ADANIPORTS,company_id+year,"duplicate (ADANIPORTS, TTM) in profitandloss (2 rows)",CRITICAL
+DQ-03,ULTRACEMCO,company_id,ULTRACEMCO in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,UNIONBANK,company_id,UNIONBANK in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,UNITDSPR,company_id,UNITDSPR in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,VBL,company_id,VBL in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,VEDL,company_id,VEDL in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,WIPRO,company_id,WIPRO in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-03,ZOMATO,company_id,ZOMATO in profitandloss has no matching row in companies (8 rows),CRITICAL
+DQ-03,ZYDUSLIFE,company_id,ZYDUSLIFE in profitandloss has no matching row in companies (13 rows),CRITICAL
+DQ-05,ADANIENSOL,opm_percentage,OPM mismatch at year=Mar-2024: computed=34.39 vs stored=30.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2013: computed=30.58 vs stored=1353.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2014: computed=31.47 vs stored=2307.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2015: computed=31.36 vs stored=3097.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2016: computed=32.61 vs stored=3466.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2017: computed=53.45 vs stored=-5715.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2018: computed=63.12 vs stored=-10277.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2019: computed=49.39 vs stored=-5447.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2020: computed=55.98 vs stored=-9859.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2021: computed=50.12 vs stored=-2510.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2022: computed=44.47 vs stored=3170.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2023: computed=34.16 vs stored=13857.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=Mar-2024: computed=34.69 vs stored=11952.0,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch at year=TTM: computed=36.94 vs stored=9061.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2015: computed=32.49 vs stored=1367.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2016: computed=32.25 vs stored=1986.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2017: computed=32.60 vs stored=2867.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2018: computed=32.28 vs stored=3935.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2019: computed=29.50 vs stored=6310.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2020: computed=34.73 vs stored=7608.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2021: computed=40.64 vs stored=6314.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2022: computed=37.55 vs stored=9906.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2023: computed=30.65 vs stored=16018.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=Mar-2024: computed=29.29 vs stored=19987.0,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch at year=TTM: computed=30.42 vs stored=21417.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2013: computed=30.05 vs stored=1006.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2014: computed=29.78 vs stored=809.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2015: computed=29.98 vs stored=902.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2016: computed=55.44 vs stored=-11700.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2017: computed=43.28 vs stored=-4372.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2018: computed=56.65 vs stored=-9197.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2019: computed=48.79 vs stored=-5414.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2020: computed=51.44 vs stored=-11728.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2021: computed=51.23 vs stored=-6957.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2022: computed=51.12 vs stored=-2948.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2023: computed=40.45 vs stored=6329.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=Mar-2024: computed=37.49 vs stored=4102.0,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch at year=TTM: computed=37.42 vs stored=3526.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2013: computed=21.18 vs stored=655.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2014: computed=24.35 vs stored=-672.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2015: computed=23.51 vs stored=-621.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2016: computed=40.38 vs stored=-8008.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2017: computed=37.85 vs stored=-5775.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2018: computed=61.87 vs stored=-13350.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2019: computed=56.73 vs stored=-11590.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2020: computed=53.88 vs stored=-12867.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2021: computed=61.83 vs stored=-18367.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2022: computed=58.39 vs stored=-13657.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2023: computed=49.80 vs stored=-9877.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=Mar-2024: computed=41.75 vs stored=-7745.0,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch at year=TTM: computed=40.23 vs stored=-8985.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2013: computed=26.77 vs stored=472.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2014: computed=28.42 vs stored=578.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2015: computed=28.56 vs stored=696.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2016: computed=30.04 vs stored=899.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2017: computed=28.16 vs stored=1143.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2018: computed=26.10 vs stored=1451.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2019: computed=22.96 vs stored=1888.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2020: computed=27.79 vs stored=1699.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2021: computed=30.40 vs stored=2094.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2022: computed=28.83 vs stored=2924.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2023: computed=28.10 vs stored=3515.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=Mar-2024: computed=28.10 vs stored=4548.0,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch at year=TTM: computed=28.67 vs stored=5175.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2013: computed=73.26 vs stored=2214.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2014: computed=78.90 vs stored=2147.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2015: computed=80.94 vs stored=2163.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2016: computed=82.02 vs stored=2480.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2017: computed=82.66 vs stored=2496.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2018: computed=81.35 vs stored=2826.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2019: computed=81.07 vs stored=3097.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2020: computed=81.29 vs stored=3206.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2021: computed=77.80 vs stored=4252.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2022: computed=79.08 vs stored=4553.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2023: computed=77.91 vs stored=5027.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=Mar-2024: computed=75.59 vs stored=6291.0,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch at year=TTM: computed=74.40 vs stored=6906.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2013: computed=73.52 vs stored=18087.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2014: computed=74.84 vs stored=17766.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2015: computed=76.60 vs stored=17343.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2016: computed=75.96 vs stored=18714.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2017: computed=84.07 vs stored=12448.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2018: computed=89.10 vs stored=9288.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2019: computed=74.89 vs stored=25007.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2020: computed=77.54 vs stored=21581.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2021: computed=79.31 vs stored=18628.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2022: computed=77.47 vs stored=24721.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2023: computed=68.01 vs stored=44232.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=Mar-2024: computed=66.29 vs stored=47971.0,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch at year=TTM: computed=66.78 vs stored=46610.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2013: computed=35.22 vs stored=3534.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2014: computed=31.74 vs stored=5602.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2015: computed=31.90 vs stored=7214.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2016: computed=31.75 vs stored=9037.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2017: computed=32.56 vs stored=11374.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2018: computed=34.63 vs stored=13374.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2019: computed=33.15 vs stored=16592.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2020: computed=37.20 vs stored=14593.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2021: computed=40.81 vs stored=16848.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2022: computed=41.61 vs stored=20795.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2023: computed=36.92 vs stored=29932.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=Mar-2024: computed=61.41 vs stored=-44685.0,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch at year=TTM: computed=62.61 vs stored=-57587.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2013: computed=96.27 vs stored=525.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2014: computed=96.48 vs stored=605.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2015: computed=96.79 vs stored=874.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2016: computed=94.74 vs stored=953.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2017: computed=96.83 vs stored=972.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2018: computed=96.67 vs stored=1074.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2019: computed=96.87 vs stored=1215.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2020: computed=96.12 vs stored=1141.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2021: computed=98.27 vs stored=1235.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2022: computed=98.84 vs stored=778.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2023: computed=99.89 vs stored=80.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=Mar-2024: computed=99.48 vs stored=531.0,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch at year=TTM: computed=99.28 vs stored=725.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2014: computed=85.94 vs stored=3553.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2015: computed=87.22 vs stored=3520.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2016: computed=84.45 vs stored=4424.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2017: computed=83.97 vs stored=4585.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2018: computed=83.57 vs stored=5334.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2019: computed=85.21 vs stored=5025.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2020: computed=86.09 vs stored=4070.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2021: computed=86.90 vs stored=4058.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2022: computed=88.98 vs stored=3256.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2023: computed=88.00 vs stored=4099.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=Mar-2024: computed=86.15 vs stored=5235.0,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch at year=TTM: computed=86.13 vs stored=5561.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2013: computed=90.40 vs stored=7699.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2014: computed=90.85 vs stored=8024.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2015: computed=91.52 vs stored=8844.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2016: computed=92.12 vs stored=7778.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2017: computed=87.71 vs stored=12317.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2018: computed=88.11 vs stored=13695.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2019: computed=88.12 vs stored=15511.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2020: computed=87.89 vs stored=14306.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2021: computed=86.70 vs stored=17559.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2022: computed=85.47 vs stored=28347.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2023: computed=89.85 vs stored=22666.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=Mar-2024: computed=88.95 vs stored=23872.0,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch at year=TTM: computed=87.53 vs stored=27931.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2013: computed=84.37 vs stored=4220.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2014: computed=83.72 vs stored=4759.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2015: computed=83.07 vs stored=5412.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2016: computed=81.64 vs stored=5910.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2017: computed=80.92 vs stored=6328.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2018: computed=78.90 vs stored=7499.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2019: computed=77.41 vs stored=8880.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2020: computed=75.21 vs stored=9861.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2021: computed=75.28 vs stored=11626.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2022: computed=75.49 vs stored=12857.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2023: computed=76.65 vs stored=14147.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=Mar-2024: computed=76.32 vs stored=14659.0,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch at year=TTM: computed=76.45 vs stored=14759.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2013: computed=70.59 vs stored=-15085.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2014: computed=66.40 vs stored=-13084.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2015: computed=70.53 vs stored=-16120.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2016: computed=88.12 vs stored=-26955.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2017: computed=104.76 vs stored=-37737.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2018: computed=117.12 vs stored=-44906.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2019: computed=116.38 vs stored=-50971.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2020: computed=100.62 vs stored=-45190.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2021: computed=102.41 vs stored=-44805.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2022: computed=84.69 vs stored=-26558.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2023: computed=72.57 vs stored=-17341.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=Mar-2024: computed=62.41 vs stored=-14152.0,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch at year=TTM: computed=69.63 vs stored=-31575.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2013: computed=104.46 vs stored=-178.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2014: computed=105.19 vs stored=-225.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2015: computed=105.24 vs stored=-221.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2016: computed=87.34 vs stored=764.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2017: computed=87.78 vs stored=919.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2018: computed=103.79 vs stored=-262.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2019: computed=85.05 vs stored=1669.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2020: computed=84.61 vs stored=1772.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2021: computed=82.97 vs stored=2072.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2022: computed=93.66 vs stored=1016.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2023: computed=92.93 vs stored=1264.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=Mar-2024: computed=87.42 vs stored=2577.0,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch at year=TTM: computed=85.57 vs stored=3363.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2013: computed=96.28 vs stored=745.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2014: computed=93.13 vs stored=1504.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2015: computed=95.20 vs stored=1655.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2016: computed=91.17 vs stored=1842.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2017: computed=95.22 vs stored=1806.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2018: computed=95.44 vs stored=1771.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2019: computed=98.70 vs stored=541.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2020: computed=101.52 vs stored=-319.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2021: computed=100.47 vs stored=-390.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2022: computed=103.40 vs stored=-2163.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2023: computed=103.48 vs stored=-1757.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=Mar-2024: computed=102.03 vs stored=-1829.0,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch at year=TTM: computed=99.59 vs stored=321.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2013: computed=27.88 vs stored=286.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2014: computed=30.95 vs stored=335.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2015: computed=32.33 vs stored=288.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2016: computed=35.28 vs stored=329.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2017: computed=39.46 vs stored=379.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2018: computed=37.93 vs stored=942.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2019: computed=41.70 vs stored=-437.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2020: computed=43.81 vs stored=-553.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2021: computed=55.16 vs stored=-2469.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2022: computed=51.39 vs stored=-839.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2023: computed=42.69 vs stored=2067.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=Mar-2024: computed=38.55 vs stored=2978.0,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch at year=TTM: computed=41.03 vs stored=1323.0,WARNING
+DQ-05,JIOFIN,opm_percentage,OPM mismatch at year=Mar-2023: computed=86.67 vs stored=88.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2013: computed=60.92 vs stored=-1789.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2014: computed=58.84 vs stored=-1379.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2015: computed=72.96 vs stored=-3366.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2016: computed=56.57 vs stored=-2263.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2017: computed=66.44 vs stored=-3965.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2018: computed=66.87 vs stored=-4141.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2019: computed=66.23 vs stored=-5114.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2020: computed=67.45 vs stored=-5005.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2021: computed=90.83 vs stored=-9958.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2022: computed=90.98 vs stored=-8512.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2023: computed=79.44 vs stored=-5746.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=Mar-2024: computed=83.67 vs stored=-13382.0,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch at year=TTM: computed=79.42 vs stored=-14146.0,WARNING
+DQ-05,SUNPHARMA,opm_percentage,OPM mismatch at year=Mar-2024: computed=26.84 vs stored=28.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2013: computed=90.71 vs stored=855.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2014: computed=96.11 vs stored=433.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2015: computed=86.33 vs stored=1904.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2016: computed=80.40 vs stored=3164.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2017: computed=88.06 vs stored=2219.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2018: computed=86.84 vs stored=3030.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2019: computed=100.53 vs stored=-151.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2020: computed=88.62 vs stored=4069.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2021: computed=99.98 vs stored=2.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2022: computed=97.85 vs stored=558.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2023: computed=88.02 vs stored=6521.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=Mar-2024: computed=76.30 vs stored=16331.0,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch at year=TTM: computed=79.20 vs stored=15908.0,WARNING
+DQ-06,ADANIENSOL,sales,non-positive sales=0 at year=Mar-2014,WARNING
+DQ-08,ADANIENT,tax_percentage,tax_percentage=-64.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,ADANIGREEN,tax_percentage,tax_percentage=-75.0 outside sane range at year=Mar-2017,WARNING
+DQ-08,ADANIGREEN,tax_percentage,tax_percentage=-35.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,ADANIGREEN,tax_percentage,tax_percentage=-19.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,ADANIPOWER,tax_percentage,tax_percentage=-79.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,ADANIPOWER,tax_percentage,tax_percentage=-47.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,ADANIPOWER,tax_percentage,tax_percentage=-40.0 outside sane range at year=Mar-2023,WARNING
+DQ-08,APOLLOHOSP,tax_percentage,tax_percentage=65.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,AXISBANK,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,AXISBANK,tax_percentage,tax_percentage=67.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,BANKBARODA,tax_percentage,tax_percentage=-19.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,BANKBARODA,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,BANKBARODA,tax_percentage,tax_percentage=77.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,BHARTIARTL,tax_percentage,tax_percentage=62.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,BHARTIARTL,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,BHARTIARTL,tax_percentage,tax_percentage=-28.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,BHARTIARTL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,BHEL,tax_percentage,tax_percentage=-39.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,BHEL,tax_percentage,tax_percentage=64.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,BHEL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,BHEL,tax_percentage,tax_percentage=-25.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,BHEL,tax_percentage,tax_percentage=-16.0 outside sane range at year=Mar-2024,WARNING
+DQ-08,CANBK,tax_percentage,tax_percentage=-13.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,CANBK,tax_percentage,tax_percentage=-36.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,CANBK,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,DLF,tax_percentage,tax_percentage=-16.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,DLF,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,GODREJCP,tax_percentage,tax_percentage=-12.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,GODREJCP,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2024,WARNING
+DQ-08,HDFCLIFE,tax_percentage,tax_percentage=-61.0 outside sane range at year=Mar-2024,WARNING
+DQ-08,HINDALCO,tax_percentage,tax_percentage=75.0 outside sane range at year=Mar-2015,WARNING
+DQ-08,HINDALCO,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,IOC,tax_percentage,tax_percentage=-74.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,IRFC,tax_percentage,tax_percentage=64.0 outside sane range at year=Mar-2013,WARNING
+DQ-08,JINDALSTEL,tax_percentage,tax_percentage=-22.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,JINDALSTEL,tax_percentage,tax_percentage=-17.0 outside sane range at year=Mar-2017,WARNING
+DQ-08,JINDALSTEL,tax_percentage,tax_percentage=-13.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,JINDALSTEL,tax_percentage,tax_percentage=-14.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,JSWENERGY,tax_percentage,tax_percentage=75.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,JSWSTEEL,tax_percentage,tax_percentage=70.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,JSWSTEEL,tax_percentage,tax_percentage=-80.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,JSWSTEEL,tax_percentage,tax_percentage=-30.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,LICI,tax_percentage,tax_percentage=68.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,LICI,tax_percentage,tax_percentage=80.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,LICI,tax_percentage,tax_percentage=76.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,LICI,tax_percentage,tax_percentage=66.0 outside sane range at year=Mar-2022,WARNING
+DQ-08,LODHA,tax_percentage,tax_percentage=-44.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,M&M,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,NAUKRI,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2015,WARNING
+DQ-08,NAUKRI,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2017,WARNING
+DQ-08,NAUKRI,tax_percentage,tax_percentage=95.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,NAUKRI,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2023,WARNING
+DQ-08,NHPC,tax_percentage,tax_percentage=-17.0 outside sane range at year=Mar-2022,WARNING
+DQ-08,NTPC,tax_percentage,tax_percentage=-25.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,PNB,tax_percentage,tax_percentage=-31.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,PNB,tax_percentage,tax_percentage=-37.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,PNB,tax_percentage,tax_percentage=-35.0 outside sane range at year=Mar-2019,WARNING
+DQ-08,SBIN,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2017,WARNING
+DQ-08,SBIN,tax_percentage,tax_percentage=-66.0 outside sane range at year=Mar-2018,WARNING
+DQ-08,TATACONSUM,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,TATAMOTORS,tax_percentage,tax_percentage=-14.0 outside sane range at year=Mar-2024,WARNING
+DQ-08,TATAPOWER,tax_percentage,tax_percentage=92.0 outside sane range at year=Mar-2013,WARNING
+DQ-08,TATAPOWER,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,TATAPOWER,tax_percentage,tax_percentage=72.0 outside sane range at year=Mar-2015,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=78.0 outside sane range at year=Mar-2013,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2015,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2016,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2017,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2020,WARNING
+DQ-08,TATASTEEL,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2024,WARNING
+DQ-08,TRENT,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2013,WARNING
+DQ-08,TRENT,tax_percentage,tax_percentage=99.0 outside sane range at year=Mar-2014,WARNING
+DQ-08,TRENT,tax_percentage,tax_percentage=-12.0 outside sane range at year=Mar-2021,WARNING
+DQ-08,TRENT,tax_percentage,tax_percentage=69.0 outside sane range at year=Mar-2022,WARNING
+DQ-08,INDIGO,tax_percentage,tax_percentage=-99.0 outside sane range at year=Mar-2019,WARNING
+DQ-09,AMBUJACEM,dividend_payout,dividend_payout=151.0 outside 0-150% at year=Dec-2020,WARNING
+DQ-09,BHARTIARTL,dividend_payout,dividend_payout=194.0 outside 0-150% at year=Mar-2018,WARNING
+DQ-09,BHARTIARTL,dividend_payout,dividend_payout=244.0 outside 0-150% at year=Mar-2019,WARNING
+DQ-09,BHARTIARTL,dividend_payout,dividend_payout=-3.0 outside 0-150% at year=Mar-2020,WARNING
+DQ-09,BHEL,dividend_payout,dividend_payout=-14.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,BHEL,dividend_payout,dividend_payout=151.0 outside 0-150% at year=Mar-2018,WARNING
+DQ-09,BRITANNIA,dividend_payout,dividend_payout=204.0 outside 0-150% at year=Mar-2021,WARNING
+DQ-09,DLF,dividend_payout,dividend_payout=-85.0 outside 0-150% at year=Mar-2020,WARNING
+DQ-09,HINDALCO,dividend_payout,dividend_payout=-82.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,IOC,dividend_payout,dividend_payout=-437.0 outside 0-150% at year=Mar-2020,WARNING
+DQ-09,JSWSTEEL,dividend_payout,dividend_payout=-67.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,M&M,dividend_payout,dividend_payout=205.0 outside 0-150% at year=Mar-2020,WARNING
+DQ-09,NAUKRI,dividend_payout,dividend_payout=-230.0 outside 0-150% at year=Mar-2017,WARNING
+DQ-09,NAUKRI,dividend_payout,dividend_payout=-31.0 outside 0-150% at year=Mar-2020,WARNING
+DQ-09,NAUKRI,dividend_payout,dividend_payout=-228.0 outside 0-150% at year=Mar-2023,WARNING
+DQ-09,NESTLEIND,dividend_payout,dividend_payout=168.0 outside 0-150% at year=Dec-2019,WARNING
+DQ-09,PNB,dividend_payout,dividend_payout=-2.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,SBIN,dividend_payout,dividend_payout=859.0 outside 0-150% at year=Mar-2017,WARNING
+DQ-09,TATACONSUM,dividend_payout,dividend_payout=-999.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,TATAPOWER,dividend_payout,dividend_payout=-319.0 outside 0-150% at year=Mar-2013,WARNING
+DQ-09,TATAPOWER,dividend_payout,dividend_payout=-114.0 outside 0-150% at year=Mar-2014,WARNING
+DQ-09,TATAPOWER,dividend_payout,dividend_payout=210.0 outside 0-150% at year=Mar-2015,WARNING
+DQ-09,TATASTEEL,dividend_payout,dividend_payout=-11.0 outside 0-150% at year=Mar-2013,WARNING
+DQ-09,TATASTEEL,dividend_payout,dividend_payout=-20.0 outside 0-150% at year=Mar-2015,WARNING
+DQ-09,TATASTEEL,dividend_payout,dividend_payout=-203.0 outside 0-150% at year=Mar-2016,WARNING
+DQ-09,TATASTEEL,dividend_payout,dividend_payout=-23.0 outside 0-150% at year=Mar-2017,WARNING
+DQ-09,TATASTEEL,dividend_payout,dividend_payout=-101.0 outside 0-150% at year=Mar-2024,WARNING
+DQ-09,TRENT,dividend_payout,dividend_payout=-87.0 outside 0-150% at year=Mar-2013,WARNING
+DQ-09,TRENT,dividend_payout,dividend_payout=-125.0 outside 0-150% at year=Mar-2014,WARNING
+DQ-09,TRENT,dividend_payout,dividend_payout=-15.0 outside 0-150% at year=Mar-2021,WARNING
+DQ-11,M&M,eps,"sign mismatch: net_profit=-321, eps=1.0 at year=Mar-2020",WARNING
+DQ-11,NAUKRI,eps,"sign mismatch: net_profit=-14, eps=2.0 at year=Mar-2015",WARNING
+DQ-11,TATAPOWER,eps,"sign mismatch: net_profit=12, eps=-1.0 at year=Mar-2014",WARNING
+DQ-02,ZYDUSLIFE,year,balancesheet: could not parse year (raw='2024.5'),CRITICAL
+DQ-02,ZOMATO,year,balancesheet: could not parse year (raw='2024.5'),CRITICAL
+DQ-02,WIPRO,year,balancesheet: could not parse year (raw='2024.5'),CRITICAL
+DQ-02,VEDL,year,balancesheet: could not parse year (raw='2024.5'),CRITICAL
+DQ-02,UNITDSPR,year,balancesheet: could not parse year (raw='2024.5'),CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2013) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2014) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2015) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2016) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2017) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2018) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2019) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2020) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2021) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2022) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2023) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Mar-2024) in balancesheet (2 rows)",CRITICAL
+DQ-02,ASIANPAINT,company_id+year,"duplicate (ASIANPAINT, Sep-2024) in balancesheet (2 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2013) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2014) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2015) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2016) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2017) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2018) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2019) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2020) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2021) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2022) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2023) in balancesheet (5 rows)",CRITICAL
+DQ-02,PNB,company_id+year,"duplicate (PNB, Mar-2024) in balancesheet (5 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2013) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2014) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2015) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2016) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2017) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2018) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2019) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2020) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2021) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2022) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2023) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Mar-2024) in balancesheet (2 rows)",CRITICAL
+DQ-02,POWERGRID,company_id+year,"duplicate (POWERGRID, Sep-2024) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2013) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2014) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2015) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2016) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2017) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2018) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2019) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2020) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2021) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2022) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2023) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Mar-2024) in balancesheet (2 rows)",CRITICAL
+DQ-02,TECHM,company_id+year,"duplicate (TECHM, Sep-2024) in balancesheet (2 rows)",CRITICAL
+DQ-03,ZYDUSLIFE,company_id,ZYDUSLIFE in balancesheet has no matching row in companies (12 rows),CRITICAL
+DQ-03,ZOMATO,company_id,ZOMATO in balancesheet has no matching row in companies (7 rows),CRITICAL
+DQ-03,WIPRO,company_id,WIPRO in balancesheet has no matching row in companies (12 rows),CRITICAL
+DQ-03,VEDL,company_id,VEDL in balancesheet has no matching row in companies (12 rows),CRITICAL
+DQ-03,UNITDSPR,company_id,UNITDSPR in balancesheet has no matching row in companies (12 rows),CRITICAL
+DQ-03,UNIONBANK,company_id,UNIONBANK in balancesheet has no matching row in companies (12 rows),CRITICAL
+DQ-03,ULTRACEMCO,company_id,ULTRACEMCO in balancesheet has no matching row in companies (13 rows),CRITICAL
+DQ-12,BEL,total_liabilities components,"components sum to 76.0, stored total=77 (1.30% off) at year=Mar-2017",WARNING
+DQ-12,INDIGO,total_liabilities components,"components sum to 26.4, stored total=26 (1.54% off) at year=Mar-2013",WARNING
+DQ-12,INDIGO,total_liabilities components,"components sum to 34.4, stored total=35 (1.71% off) at year=Mar-2014",WARNING
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2014) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2015) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2016) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2017) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2018) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2019) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2020) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2021) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2022) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2023) in cashflow (2 rows)",CRITICAL
+DQ-02,ABB,company_id+year,"duplicate (ABB, Mar-2024) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2013) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2014) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2015) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2016) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2017) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2018) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2019) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2020) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2021) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2022) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2023) in cashflow (2 rows)",CRITICAL
+DQ-02,BAJAJ-AUTO,company_id+year,"duplicate (BAJAJ-AUTO, Mar-2024) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2013) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2014) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2015) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2016) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2017) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2018) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2019) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2020) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2021) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2022) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2023) in cashflow (2 rows)",CRITICAL
+DQ-02,TCS,company_id+year,"duplicate (TCS, Mar-2024) in cashflow (2 rows)",CRITICAL
+DQ-03,AGTL,company_id,AGTL in cashflow has no matching row in companies (7 rows),CRITICAL
+DQ-03,ULTRACEMCO,company_id,ULTRACEMCO in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,UNIONBANK,company_id,UNIONBANK in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,UNITDSPR,company_id,UNITDSPR in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,VBL,company_id,VBL in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,VEDL,company_id,VEDL in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,WIPRO,company_id,WIPRO in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-03,ZOMATO,company_id,ZOMATO in cashflow has no matching row in companies (5 rows),CRITICAL
+DQ-03,ZYDUSLIFE,company_id,ZYDUSLIFE in cashflow has no matching row in companies (12 rows),CRITICAL
+DQ-07,TVSMOTOR,net_cash_flow,CFO+CFI+CFF=-128.0 != stored net_cash_flow=532.0 at year=Mar-2022,WARNING
+DQ-03,WIPRO,company_id,WIPRO in analysis has no matching row in companies (4 rows),CRITICAL
+DQ-03,ULTRACEMCO,company_id,ULTRACEMCO in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,UNIONBANK,company_id,UNIONBANK in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,UNITDSPR,company_id,UNITDSPR in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,VBL,company_id,VBL in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,VEDL,company_id,VEDL in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,WIPRO,company_id,WIPRO in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,ZOMATO,company_id,ZOMATO in documents has no matching row in companies (16 rows),CRITICAL
+DQ-03,ZYDUSLIFE,company_id,ZYDUSLIFE in documents has no matching row in companies (16 rows),CRITICAL
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ADANIENSOL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ADANIGREEN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ADANIPORTS,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ADANIPOWER,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,AMBUJACEM,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,AMBUJACEM,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,AMBUJACEM,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,AMBUJACEM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,AMBUJACEM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,APOLLOHOSP,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,APOLLOHOSP,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,APOLLOHOSP,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,APOLLOHOSP,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ASIANPAINT,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ASIANPAINT,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,ASIANPAINT,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ASIANPAINT,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ATGL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,AXISBANK,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,AXISBANK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,BAJAJ-AUTO,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,BAJAJ-AUTO,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,BAJAJ-AUTO,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,BAJAJFINSV,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,BAJAJFINSV,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,BAJAJHLDNG,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,BAJAJHLDNG,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,BAJFINANCE,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,BAJFINANCE,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,BRITANNIA,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,BRITANNIA,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,CANBK,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,CANBK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,CHOLAFIN,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,CHOLAFIN,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,CHOLAFIN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,CIPLA,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,CIPLA,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,COALINDIA,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,DABUR,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,DABUR,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,DLF,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,DLF,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,DMART,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,DRREDDY,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,DRREDDY,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,DRREDDY,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,EICHERMOT,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,EICHERMOT,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,GAIL,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,GAIL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,GODREJCP,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,GODREJCP,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,GRASIM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,GRASIM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HAL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HAVELLS,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HAVELLS,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HCLTECH,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,HCLTECH,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HCLTECH,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HDFCBANK,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,HDFCBANK,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,HDFCBANK,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HDFCBANK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HDFCLIFE,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,HDFCLIFE,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,HDFCLIFE,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HDFCLIFE,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HDFCLIFE,annual_report_url,malformed URL at year=2008: 'Null',WARNING
+DQ-10,HEROMOTOCO,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HEROMOTOCO,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HINDALCO,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HINDALCO,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,HINDUNILVR,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,HINDUNILVR,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ICICIBANK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ICICIGI,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ICICIPRULI,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ICICIPRULI,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ICICIPRULI,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,INDIGO,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,INDUSINDBK,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,INDUSINDBK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,INFY,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,INFY,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,IOC,annual_report_url,malformed URL at year=2024: 'bseindia.com/xml-data/corpfiling/AttachHis/24a0940c-fa5a-4e36-a404-9dab3637ea0c.pdf',WARNING
+DQ-10,IOC,annual_report_url,malformed URL at year=2023: 'bseindia.com/xml-data/corpfiling/AttachHis//ae413f27-7b30-4cdb-8f1b-8d82e5914e54.pdf',WARNING
+DQ-10,IOC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,IOC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,IRCTC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2020: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,IRFC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2023: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2022: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2021: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2020: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,JIOFIN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,JSWENERGY,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,JSWENERGY,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,JSWENERGY,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,JSWSTEEL,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,JSWSTEEL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2023: 'bseindia.com/xml-data/corpfiling/AttachHis//b9e0c871-3353-4ef4-855e-069bcfd848e1.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2022: 'bseindia.com/bseplus/AnnualReport/500247/73932500247.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2021: 'bseindia.com/bseplus/AnnualReport/500247/69160500247.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2017: 'bseindia.com/bseplus/AnnualReport/500247/5002470317.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2016: '5002470316.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2015: '5002470315.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2013: 'untitled',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2012: 'bseindia.com/bseplus/AnnualReport/500247/5002470312.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2011: '5002470311.pdf',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,KOTAKBANK,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,LICI,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2020: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2019: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2018: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,LODHA,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,LT,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,LT,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,LTIM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,M&M,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,M&M,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,MARUTI,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,MARUTI,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,MOTHERSON,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,MOTHERSON,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,NAUKRI,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,NAUKRI,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,NHPC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,NHPC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,NTPC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,NTPC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,ONGC,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,ONGC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,ONGC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,PFC,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,PFC,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,PIDILITIND,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,PIDILITIND,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,PIDILITIND,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,PNB,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,PNB,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,POWERGRID,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,POWERGRID,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,RECLTD,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,RECLTD,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,RECLTD,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,RELIANCE,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,RELIANCE,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,RELIANCE,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2017: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2016: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2015: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2014: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2013: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,SBILIFE,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,SBIN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,SHREECEM,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,SHREECEM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,SHREECEM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,SHRIRAMFIN,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,SHRIRAMFIN,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,SHRIRAMFIN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,SIEMENS,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,SIEMENS,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TATACONSUM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TATACONSUM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TATAMOTORS,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TATAMOTORS,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TATAPOWER,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TATAPOWER,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TATASTEEL,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TATASTEEL,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TCS,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TCS,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TECHM,annual_report_url,malformed URL at year=2012: 'Null',WARNING
+DQ-10,TECHM,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,TECHM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TECHM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TITAN,annual_report_url,malformed URL at year=2011: 'Null',WARNING
+DQ-10,TITAN,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TITAN,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TORNTPHARM,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TORNTPHARM,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TRENT,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TRENT,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-10,TVSMOTOR,annual_report_url,malformed URL at year=2010: 'Null',WARNING
+DQ-10,TVSMOTOR,annual_report_url,malformed URL at year=2009: 'Null',WARNING
+DQ-03,WIPRO,company_id,WIPRO in prosandcons has no matching row in companies (2 rows),CRITICAL

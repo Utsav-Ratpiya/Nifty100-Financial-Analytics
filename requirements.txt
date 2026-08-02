@@ -1,0 +1,30 @@
+# Nifty 100 Analytics — full project dependency list
+# Sprint 1 only strictly needs: pandas, openpyxl, pytest
+# Remaining packages are listed here now so later sprints don't need re-setup.
+
+pandas>=2.0
+openpyxl>=3.1
+pytest>=7.4
+pytest-html>=4.0
+
+# Sprint 2-3: screener, ratios, peer analytics
+PyYAML>=6.0
+XlsxWriter>=3.1
+
+# Sprint 4: dashboard
+streamlit>=1.32
+plotly>=5.20
+
+# Sprint 5: NLP, PDF reports, cash flow intelligence
+reportlab>=4.1
+matplotlib>=3.8
+seaborn>=0.13
+
+# Sprint 6: clustering, API
+scikit-learn>=1.4
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+
+black>=24.1
+ruff>=0.3
