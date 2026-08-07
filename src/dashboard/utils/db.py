@@ -217,8 +217,20 @@ def get_universe_for_year(year: int) -> pd.DataFrame:
 
 @st.cache_data(ttl=600)
 def get_pros_cons(ticker: str) -> pd.DataFrame:
-    """Pros/cons text for one company (source spreadsheet, Sprint 1 load)."""
-    conn = _connect()
-    df = pd.read_sql("SELECT pros, cons FROM prosandcons WHERE company_id = ?", conn, params=(ticker,))
-    conn.close()
-    return df
+    """Pros/cons for one company, ranked by confidence (highest first).
+
+    The raw `prosandcons` DB table only covers 4 of the 92 companies (it's
+    the untouched Sprint 1 source-spreadsheet load), which is why most
+    company profiles showed an empty Pros & Cons section. The Sprint 5
+    NLP rule engine (src/nlp/pros_cons_generator.py) generates a pro AND
+    a con for every one of the 92 companies with a confidence score, and
+    already ran -- its output lives at output/pros_cons_generated.csv.
+    That's the source used here so every company has something to show;
+    falls back to an empty frame (not an error) if the file is missing.
+    """
+    path = os.path.join(OUTPUT_DIR, "pros_cons_generated.csv")
+    if not os.path.exists(path):
+        return pd.DataFrame(columns=["type", "text", "confidence_pct"])
+    df = pd.read_csv(path)
+    df = df[df["company_id"] == ticker].sort_values("confidence_pct", ascending=False)
+    return df[["type", "text", "confidence_pct"]].reset_index(drop=True)

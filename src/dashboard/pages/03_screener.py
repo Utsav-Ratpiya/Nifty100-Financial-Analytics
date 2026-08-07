@@ -1,25 +1,34 @@
 """
 src/dashboard/pages/03_screener.py — Nifty 100 Analytics
-Sprint 4 / Day 24 deliverable.
+Sprint 4 / Day 24 deliverable + visual-enhancement pass: 13 sliders (was
+10 — added Market Cap, EPS CAGR, Asset Turnover using metrics already
+defined in screener_config.yaml), 4 KPI tiles summarising the filtered
+set, and a new ROE-vs-D/E scatter of the results.
 """
 import os
 import sys
 
 import pandas as pd
+import plotly.express as px
 import streamlit as st
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "utils"))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "screener"))
 from db import get_universe  # noqa: E402
 from engine import load_config, apply_filters, PRESET_NAMES  # noqa: E402
+from theme import animated_title, inject_global_css, section_header  # noqa: E402
 
 st.set_page_config(page_title="Screener — Nifty 100 Analytics", layout="wide")
-st.title("Screener")
+inject_global_css()
+animated_title("Screener", icon="\U0001F50D")
 
 config = load_config()
 universe = get_universe()
 
-# --- slider metric definitions: (session_state key, screener_config metric name, label, min, max, default, step) ---
+# --- slider metric definitions: (session_state key, label, min, max, default, step) ---
+# First 10 are the original Sprint 4 sliders; the last 3 add previously
+# unused screener_config.yaml metrics (min_market_cap, min_eps_cagr,
+# min_asset_turnover) so the screener now covers 13 metrics end to end.
 SLIDERS = [
     ("min_roe", "ROE min (%)", -20.0, 60.0, 0.0, 0.5),
     ("max_de", "D/E max", 0.0, 10.0, 10.0, 0.1),
@@ -31,6 +40,9 @@ SLIDERS = [
     ("max_pb", "P/B max", 0.0, 30.0, 30.0, 0.1),
     ("min_div_yield", "Dividend Yield min (%)", 0.0, 10.0, 0.0, 0.1),
     ("min_icr", "ICR min", 0.0, 30.0, 0.0, 0.5),
+    ("min_market_cap", "Market Cap min (₹ Cr)", 0.0, 500000.0, 0.0, 1000.0),
+    ("min_eps_cagr", "EPS CAGR 5yr min (%)", -50.0, 80.0, -50.0, 0.5),
+    ("min_asset_turnover", "Asset Turnover min", 0.0, 5.0, 0.0, 0.1),
 ]
 
 PRESET_LABELS = {name: config["presets"][name]["label"] for name in PRESET_NAMES}
@@ -38,7 +50,7 @@ PRESET_LABELS = {name: config["presets"][name]["label"] for name in PRESET_NAMES
 if "screener_filters" not in st.session_state:
     st.session_state.screener_filters = {key: default for key, _, _, _, default, _ in SLIDERS}
 
-st.subheader("Presets")
+section_header("Presets")
 preset_cols = st.columns(len(PRESET_NAMES))
 for i, preset_name in enumerate(PRESET_NAMES):
     if preset_cols[i].button(PRESET_LABELS[preset_name], use_container_width=True):
@@ -50,7 +62,7 @@ for i, preset_name in enumerate(PRESET_NAMES):
         st.session_state["_active_preset"] = preset_name
 
 st.divider()
-st.subheader("Filters")
+section_header("Filters")
 
 slider_cols = st.columns(5)
 current = {}
@@ -82,6 +94,14 @@ except Exception as exc:
     results = pd.DataFrame()
 
 st.divider()
+
+# --- 4 KPI tiles summarising the filtered set (new) ---
+m1, m2, m3, m4 = st.columns(4)
+m1.metric("Companies matched", len(results))
+m2.metric("Avg Composite Score", f"{results['composite_quality_score'].mean():.1f}" if not results.empty and "composite_quality_score" in results.columns else "N/A")
+m3.metric("Avg ROE", f"{results['return_on_equity_pct'].mean():.1f}%" if not results.empty and "return_on_equity_pct" in results.columns else "N/A")
+m4.metric("Median P/E", f"{results['pe_ratio'].median():.1f}x" if not results.empty and "pe_ratio" in results.columns else "N/A")
+
 st.markdown(f"**{len(results)} companies match your filters**")
 
 DISPLAY_COLS = [
@@ -105,5 +125,20 @@ if not results.empty:
         "Download CSV", data=csv_bytes, file_name="screener_results.csv",
         mime="text/csv",
     )
+
+    st.divider()
+    section_header("Filtered results — ROE vs D/E")
+    scatter_df = results.dropna(subset=["return_on_equity_pct", "debt_to_equity"])
+    if not scatter_df.empty:
+        fig = px.scatter(
+            scatter_df, x="debt_to_equity", y="return_on_equity_pct",
+            size=scatter_df["free_cash_flow_cr"].clip(lower=1).fillna(1) if "free_cash_flow_cr" in scatter_df.columns else None,
+            color="broad_sector" if "broad_sector" in scatter_df.columns else None,
+            hover_name="company_name" if "company_name" in scatter_df.columns else None,
+            labels={"debt_to_equity": "D/E", "return_on_equity_pct": "ROE %"},
+            size_max=40,
+        )
+        fig.update_layout(height=420, legend=dict(orientation="h", y=-0.3))
+        st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("No companies match the current filters. Try widening a threshold or clearing a preset.")
