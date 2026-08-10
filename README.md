@@ -33,32 +33,36 @@ The platform processes financial data for **92 Nifty 100 companies** and provide
 
 ## Home Dashboard
 
-![Home](screenshots/home.png)
+![Home](screenshots/home1.png)
 
+![Home](screenshots/home2.png)
 ---
 
 ## Company Profile
 
-![Profile](screenshots/profile.png)
+![Profile](screenshots/profile1.png)
 
+![Profile](screenshots/profile2.png)
 ---
 
 ## Stock Screener
 
-![Screener](screenshots/screener.png)
+![Screener](screenshots/screener1.png)
 
+![Screener](screenshots/screener2.png)
 ---
 
 ## Peer Comparison
 
-![Peers](screenshots/peers.png)
+![Peers](screenshots/peer_comparison.png)
 
 ---
 
 ## Trend Analysis
 
-![Trend](screenshots/trends.png)
+![Trend](screenshots/trend1.png)
 
+![Trend](screenshots/trend2.png)
 ---
 
 ## Sector Analysis
@@ -71,14 +75,16 @@ The platform processes financial data for **92 Nifty 100 companies** and provide
 
 ## Capital Allocation
 
-![Capital](screenshots/capital.png)
+![Capital](screenshots/capital1.png)
 
+![Capital](screenshots/capital2.png)
 ---
 
 ## Annual Reports
 
-![Reports](screenshots/reports.png)
+![Reports](screenshots/report1.png)
 
+![Reports](screenshots/report2.png)
 ---
 
 # 📂 Project Structure
